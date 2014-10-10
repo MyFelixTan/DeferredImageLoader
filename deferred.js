@@ -17,7 +17,7 @@
 
         isScrolledIntoView: function (elem)
         {
-            var docViewTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+            var docViewTop = $(window).scrollTop();
             var docViewBottom = docViewTop + $(window).height();
 
             var elemTop = $(elem).offset().top;
